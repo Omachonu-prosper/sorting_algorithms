@@ -3,7 +3,7 @@
 /**
  * bubble_sort - sorts an array ascending order using the Bubble sort algorithm
  * @array: the array to sort
- * size: the size of the array
+ * @size: the size of the array
  */
 void bubble_sort(int *array, size_t size)
 {
@@ -17,11 +17,11 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (j + 1 != n)
 			{
-				if (array[j] > array[j+1])
+				if (array[j] > array[j + 1])
 				{
 					temp = array[j];
-					array[j] = array[j+1];
-					array[j+1] = temp;
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
 					print_array(array, n);
 				}
 			}
